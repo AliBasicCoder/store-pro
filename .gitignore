@@ -1,0 +1,6 @@
+node_modules/
+/test/
+/test2/
+index.js
+index.test.js
+*.d.ts

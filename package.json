@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "test": "npm --prefix ./store-pro run build-test && npm --prefix ./store-pro-react run build-test && npm --prefix ./store-pro-svelte run test"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "store-pro-react",
+  "version": "1.0.0",
+  "description": "react implementation of store-pro",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "react-scripts test --watchAll=false",
+    "build": "tsc -d",
+    "build-test": "npm run build && npm run test"
+  },
+  "author": "AliBasicCoder",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^17.0.39",
+    "store-pro-test": "file:../store-pro"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0  || ^17.0.0",
+    "react-dom": "^16.8.0  || ^17.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.21",
+    "@types/react-dom": "^17.0.13",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0"
+  }
+}
