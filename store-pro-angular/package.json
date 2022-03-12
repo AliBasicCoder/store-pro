@@ -1,0 +1,21 @@
+{
+  "name": "store-pro-angular",
+  "version": "1.0.0",
+  "description": "angular implementation of store-pro",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "store-pro-test": "file:../store-pro"
+  },
+  "peerDependencies": {
+    "@angular/core": "^13.2.0"
+  },
+  "scripts": {
+    "build": "tsc -d"
+  },
+  "author": "AliBasicCoder",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}
