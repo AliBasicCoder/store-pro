@@ -1,11 +1,30 @@
 import { Store } from "store-pro-test";
-import { OnInit, OnDestroy } from "@angular/core";
+import { OnInit, OnDestroy, ChangeDetectorRef } from "@angular/core";
 
-export function BindStore<T>(store: Store<T>) {
-  return function (
-    target: { [key: string]: any } & OnInit & OnDestroy,
-    propertyName: string
-  ) {
+function BindStore<T>(
+  store: T,
+  useChangeDetector: true
+): (
+  target: { [key: string]: any } & OnInit &
+    OnDestroy & { changeDetector: ChangeDetectorRef },
+  propertyName: string
+) => void;
+function BindStore<T>(
+  store: T,
+  useChangeDetector: false
+): (
+  target: { [key: string]: any } & OnInit & OnDestroy,
+  propertyName: string
+) => void;
+function BindStore<T>(
+  store: Store<T>,
+  useChangeDetector = false
+): (
+  target: { [key: string]: any } & OnInit &
+    OnDestroy & { changeDetector?: ChangeDetectorRef },
+  propertyName: string
+) => void {
+  return function (target, propertyName) {
     let ngOnInit = target.ngOnInit;
     let ngOnDestroy = target.ngOnDestroy;
 
@@ -14,6 +33,7 @@ export function BindStore<T>(store: Store<T>) {
     target.ngOnInit = function () {
       unsubscribe = store.subscribe((val) => {
         this[propertyName] = val;
+        if (useChangeDetector) this.changeDetector?.detectChanges();
       });
 
       ngOnInit.call(this);
@@ -26,3 +46,5 @@ export function BindStore<T>(store: Store<T>) {
     };
   };
 }
+
+export { BindStore };

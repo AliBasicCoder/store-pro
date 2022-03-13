@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { BindStore } from 'store-pro-angular-test';
 import { something } from './store';
 
@@ -8,7 +8,9 @@ import { something } from './store';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit, OnDestroy {
-  @BindStore(something) value?: number[];
+  @BindStore(something, true) value?: number[];
+
+  constructor(public changeDetector: ChangeDetectorRef) {}
 
   ngOnDestroy(): void {}
 

@@ -11,7 +11,7 @@
     "@angular/core": "^13.2.0"
   },
   "scripts": {
-    "build": "tsc -d"
+    "build": "tsc index.ts -d --lib es2015,dom --strict"
   },
   "author": "AliBasicCoder",
   "license": "MIT",
