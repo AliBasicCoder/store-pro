@@ -11,7 +11,9 @@
     "@angular/core": "^13.2.0"
   },
   "scripts": {
-    "build": "tsc index.ts -d --lib es2015,dom --strict"
+    "build": "tsc index.ts -d --lib es2015,dom --strict",
+    "test": "npm --prefix=./test test -- --watch=false",
+    "build-test": "npm run build && npm test"
   },
   "author": "AliBasicCoder",
   "license": "MIT",
