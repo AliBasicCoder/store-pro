@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Store } from "store-pro-test";
+import { Store } from "./store-pro";
 
 export function useStore<T>(store: Store<T>) {
   const [$store, set$store] = useState(store.get());

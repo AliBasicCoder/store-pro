@@ -1,3 +1,7 @@
-*.ts
+index.ts
+index.test.tsx
+index.test.js
+index.test.d.ts
+store-pro.ts
 tsconfig.json
 test/

@@ -3,4 +3,5 @@ node_modules/
 /test2/
 index.js
 index.test.js
+store-pro.js
 *.d.ts

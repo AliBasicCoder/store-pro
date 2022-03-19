@@ -1,4 +1,4 @@
-import { Store } from "store-pro-test";
+import { Store } from "./store-pro";
 import { OnInit, OnDestroy, ChangeDetectorRef } from "@angular/core";
 
 function BindStore<T>(

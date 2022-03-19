@@ -17,7 +17,8 @@
   "author": "AliBasicCoder",
   "license": "MIT",
   "dependencies": {
-    "@types/react": "^17.0.39"
+    "@types/react": "^17.0.39",
+    "store-pro": "^1.0.1"
   },
   "peerDependencies": {
     "react": "^16.8.0  || ^17.0.0",

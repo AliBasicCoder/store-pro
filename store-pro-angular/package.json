@@ -17,7 +17,10 @@
   "author": "AliBasicCoder",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.6.2",
-    "store-pro-test": "file:../store-pro"
+    "store-pro-test": "file:../store-pro",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "store-pro": "^1.0.1"
   }
 }
