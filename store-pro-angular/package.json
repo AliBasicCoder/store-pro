@@ -12,6 +12,8 @@
     "test": "npm --prefix=./test test -- --watch=false",
     "build-test": "npm run build && npm test"
   },
+  "repository": "https://github.com/AliBasicCoder/store-pro.git",
+  "homepage": "https://github.com/AliBasicCoder/store-pro.git",
   "author": "AliBasicCoder",
   "license": "MIT",
   "devDependencies": {

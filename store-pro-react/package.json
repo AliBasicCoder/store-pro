@@ -12,6 +12,8 @@
     "build": "tsc -d",
     "build-test": "npm run build && npm run test"
   },
+  "repository": "https://github.com/AliBasicCoder/store-pro.git",
+  "homepage": "https://github.com/AliBasicCoder/store-pro.git",
   "author": "AliBasicCoder",
   "license": "MIT",
   "dependencies": {

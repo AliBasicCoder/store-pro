@@ -11,6 +11,8 @@
   "peerDependencies": {
     "svelte": "^3.0.0"
   },
+  "repository": "https://github.com/AliBasicCoder/store-pro.git",
+  "homepage": "https://github.com/AliBasicCoder/store-pro.git",
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/svelte": "^3.0.3",
