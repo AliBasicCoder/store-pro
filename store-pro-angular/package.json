@@ -4,9 +4,6 @@
   "description": "angular implementation of store-pro",
   "main": "index.js",
   "types": "index.d.ts",
-  "dependencies": {
-    "store-pro-test": "file:../store-pro"
-  },
   "peerDependencies": {
     "@angular/core": "^13.2.0"
   },
@@ -18,6 +15,7 @@
   "author": "AliBasicCoder",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.6.2"
+    "typescript": "^4.6.2",
+    "store-pro-test": "file:../store-pro"
   }
 }
