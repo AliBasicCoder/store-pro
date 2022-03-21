@@ -1,6 +1,6 @@
 {
   "name": "store-pro-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react implementation of store-pro",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -36,5 +36,11 @@
     "react-dom": "^17.0.2",
     "react-scripts": "^5.0.0",
     "store-pro-test": "file:../store-pro"
-  }
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "store-pro",
+    "state management"
+  ]
 }

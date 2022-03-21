@@ -1,6 +1,6 @@
 {
   "name": "store-pro-angular",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "angular implementation of store-pro",
   "main": "index.js",
   "types": "index.d.ts",
@@ -22,5 +22,12 @@
   },
   "dependencies": {
     "store-pro": "^1.0.1"
-  }
+  },
+  "keywords": [
+    "angular",
+    "redux",
+    "rxjs",
+    "state management",
+    "store-pro"
+  ]
 }

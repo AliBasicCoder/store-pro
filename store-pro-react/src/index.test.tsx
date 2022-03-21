@@ -13,6 +13,7 @@ class Something extends ReadableStore<number> {
 
 test("hook works", () => {
   const something = new Something(0);
+  // @ts-ignore
   const s = renderHook(() => useStore(something));
 
   expect(s.result.current).toBe(0);
@@ -38,6 +39,7 @@ const something2 = new Something2([0, 1, 2]);
 class TestComponent extends React.Component<any, { store: number[] }> {
   constructor(props: {}) {
     super(props);
+    // @ts-ignore
     storeOnClass(this, something2);
   }
   render() {

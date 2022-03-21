@@ -1,6 +1,6 @@
 {
   "name": "store-pro",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "global state management for the most popular js frameworks",
   "main": "index.js",
   "types": "index.d.ts",
@@ -18,5 +18,13 @@
     "jest": "^27.5.1",
     "ts-jest": "^27.1.3",
     "typescript": "^4.6.2"
-  }
+  },
+  "keywords": [
+    "store",
+    "react",
+    "svelte",
+    "angular",
+    "state management",
+    "redux"
+  ]
 }
