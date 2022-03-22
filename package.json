@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "test": "npm --prefix ./store-pro run build-test && npm --prefix ./store-pro-react run build-test && npm --prefix ./store-pro-svelte run test && npm --prefix ./store-pro-angular run build-test"
+    "test": "npm --prefix ./store-pro run build-test && npm --prefix ./store-pro-react run build-test && npm --prefix ./store-pro-svelte run test && npm --prefix ./store-pro-angular run build-test",
+    "install": "npm --prefix ./store-pro install && npm --prefix ./store-pro-angular/test install && npm install --prefix ./store-pro-angular install && npm --prefix ./store-pro-react install && npm --prefix ./store-pro-svelte install"
   }
 }
