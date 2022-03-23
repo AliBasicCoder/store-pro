@@ -10,28 +10,28 @@ vue support coming soon
 
 ```ts
 // store.ts
-import { ReadableStore } from "store-pro"
+import { ReadableStore } from "store-pro";
 
 export interface Todo {
   title: string;
   done: boolean;
-  id: number
+  id: number;
 }
 
 // if you want update and set methods to be accessed outside
 // the use "WritableStore" instead
 class TodoStore extends ReadableStore<Todo[]> {
   addTodo(todo: Todo) {
-    this.update(state => {
+    this.update((state) => {
       // you don't need to create a new object every update
       state.push(todo);
       return state;
       // or...
       return [...state, todo];
-    })
+    });
   }
   removeTodo(id: number) {
-    this.update(state => state.filter(todo => todo.id !== id);
+    this.update((state) => state.filter((todo) => todo.id !== id));
   }
 }
 
@@ -57,7 +57,9 @@ export function App() {
       {$todos.map((todo) => (
         <>
           <h1>{todo.title}</h1>
-          <button onClick={todoStore.removeTodo(todo.id)}>remove todo</button>
+          <button onClick={() => todoStore.removeTodo(todo.id)}>
+            remove todo
+          </button>
         </>
       ))}
     </>
