@@ -23,7 +23,7 @@ jobs:
           cache: "npm"
       - run: npm --prefix ./store-pro install
       - run: npm --prefix ./store-pro-angular/test install
-      - run: npm install --prefix ./store-pro-angular install
+      - run: npm --prefix ./store-pro-angular install
       - run: npm --prefix ./store-pro-react install
       - run: npm --prefix ./store-pro-svelte install
       - run: npm --prefix ./store-pro run build-test
