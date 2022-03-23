@@ -16,3 +16,4 @@ if (args[0] === "switch") {
     fs.writeFileSync(path.join(__dirname, target), string);
   });
 }
+//
