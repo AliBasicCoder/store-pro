@@ -17,6 +17,7 @@
   "author": "AliBasicCoder",
   "license": "MIT",
   "devDependencies": {
+    "@angular/core": "^13.3.0",
     "store-pro-test": "file:../store-pro",
     "typescript": "^4.6.2"
   },
